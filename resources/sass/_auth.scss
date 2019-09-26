@@ -1,0 +1,45 @@
+.h-login {
+
+    height: 100vh;
+
+    .h-login-logo {
+
+        position: relative;
+        padding: 3rem 0;
+        border-top: $blue 4px solid;
+
+        @media only screen and (min-width: map-get($grid-breakpoints, "md")) {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            padding: 0;
+            border-top: none;
+        }
+    }
+
+    .h-login-container {
+        width: 100%;
+        text-align: center;
+
+        @media only screen and (min-width: map-get($grid-breakpoints, "md")) {
+            width: 440px;
+            margin-left: -40%;
+            text-align: left;
+        }
+    }
+
+    .form-control {
+        background: none;
+        border: none;
+        border-bottom: #ddd 2px solid;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:hover, &:active, &:focus {
+            outline: 0;
+            box-shadow: none;
+            border-bottom-color: darken(#ddd, 30);
+        }
+    }
+}

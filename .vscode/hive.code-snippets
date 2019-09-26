@@ -1,0 +1,176 @@
+{
+	// Place your app58 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Hive Parameters": {
+		"prefix": "hparams",
+		"body": [
+			"@component('hive::components.param', ['title' => '${1:title}'])",
+			"    {{ ${2:param} }}",
+			"@endcomponent$0"
+		],
+		"description": "Create a new parameter applying the Hive application styles"
+	}, 
+	"Hive Nullable Parameters": {
+		"prefix": "hnparams",
+		"body": [
+			"@component('hive::components.param', ['title' => '${1:title}'])",
+			"    {!! !empty(${2:param}) ? ${2:param} : '<span class=\"text-muted\">Não informado(a)</span>' !!}",
+			"@endcomponent$0"
+		],
+		"description": "Create a new parameter with nullable options and apply the Hive application styles"
+	}, 
+	"Hive Date Parameters": {
+		"prefix": "hdparams",
+		"body": [
+			"@component('hive::components.param', ['title' => '${1:title}'])",
+			"    {!! !empty(${2:param}) ? ${2:param}->format('d/m/Y') : '<span class=\"text-muted\">Não informado(a)</span>' !!}",
+			"@endcomponent$0"
+		],
+		"description": "Create a new date format parameter with nullable options and apply the Hive application styles"
+	}, 
+	"Hive Cards": {
+		"prefix": "hcards",
+		"body": [
+			"@component('hive::components.card', ['title' => '${1:title}'])",
+			"    ${2:param}",
+			"@endcomponent$0"
+		],
+		"description": "Create a new card applying the Hive application styles"
+	}, 
+	"Hive Form Text": {
+		"prefix": "hftext",
+		"body": [
+			"{!! Form::label('${1:attribute}', '${2:label}') !!}", 
+			"{!! Form::text('${1:attribute}', null, ['class' => 'form-control']) !!}", 
+			"<p class=\"form-text\">${3:helper}</p>$0"
+		],
+		"description": "Create a new text input applying the Hive application styles"
+	}, 	
+	"Hive Form Select": {
+		"prefix": "hfselect",
+		"body": [
+			"{!! Form::label('${1:attribute}', '${2:label}') !!}", 
+			"{!! Form::select('${1:attribute}', [", 
+			"    '' => 'Por favor, selecione...', ", 
+			"], null, ['class' => 'form-control']) !!}", 
+			"<p class=\"form-text\">${3:helper}</p>$0"
+		],
+		"description": "Create a new select input applying the Hive application styles"
+	},
+	"Hive Form Textarea": {
+		"prefix": "hftextarea",
+		"body": [
+			"{!! Form::label('${1:attribute}', '${2:label}') !!}", 
+			"{!! Form::textarea('${1:attribute}', null, ['class' => 'form-control']) !!}", 
+			"<p class=\"form-text\">${3:helper}</p>$0"
+		],
+		"description": "Create a new textarea input applying the Hive application styles"
+	},
+	"Hive Form Number": {
+		"prefix": "hfnumber",
+		"body": [
+			"{!! Form::label('${1:attribute}', '${2:label}') !!}", 
+			"{!! Form::number('${1:attribute}', null, ['class' => 'form-control', 'step' => 'any']) !!}", 
+			"<p class=\"form-text\">${3:helper}</p>$0"
+		],
+		"description": "Create a new number input applying the Hive application styles"
+	}, 
+	"Hive Form Submit": {
+		"prefix": "hfsubmit", 
+		"body": [
+			"@include('hive::components.form-footer', ['button' => ${1:submit_button_text}])$0"
+		], 
+		"description": "Create a new submit button applying the Hive application styles"
+	}, 
+	"Hive Full Resource Table": {
+		"prefix": "hrtable", 
+		"body": [
+			"<div class=\"card\">", 
+			"    <div class=\"card-body\">", 
+			"        ", 
+			"        @if(count(${1:resources}))", 
+			"            <div class=\"table-responsive\">", 
+			"                <table class=\"table hello-table hello-table-no-wrap mb-0\">", 
+			"                    <thead>", 
+			"                        <tr>", 
+			"                            <th></th>", 
+			"                            <th class=\"hello-table-action\">Ações</th>", 
+			"                        </tr>", 
+			"                    </thead>", 
+			"                    </tbody>", 
+			"                        @foreach(${1:resources} as ${2:resource})", 
+			"                            <tr>", 
+			"                                <td></td>", 
+			"                                <td class=\"hello-table-action\">", 
+			"                                    {!! Form::open(['url' => ${2:resource}->path(), 'method' => 'delete']) !!}", 
+			"                                        <a class=\"btn btn-sm btn-link\" data-toggle=\"tooltip\" title=\"Editar\" href=\"{{ url(${2:resource}->path() . '/edit') }}\"><i class=\"fas fa-pencil-alt fa-sm\"></i></a>", 
+			"                                        <button class=\"btn btn-sm btn-link btn-confirm-delete\" data-toggle=\"tooltip\" title=\"Remover\" type=\"submit\"><i class=\"fas fa-trash fa-sm text-danger\"></i></button>", 
+			"                                    {!! Form::close() !!}", 
+			"                                </td>", 
+			"                            </tr>", 
+			"                        @endforeach", 
+			"                    </tbody>", 
+			"                </table>", 
+			"            </div>", 
+			"        @else", 
+			"            @include('hive::components.no-results')", 
+			"        @endif", 
+			"    </div>", 
+			"    ", 
+			"    <!-- Paginação -->", 
+			"    @include('hive::components.pagination', ['resource' => ${1:resources}->appends(request()->except('page')), 'wrapper' => 'card-footer'])", 
+			"</div>"
+		],
+		"description": "Create a new resource table applying the Hive application styles"
+	}, 
+	"Hive Toolbar": {
+		"prefix": "htoolbar",
+		"body": [
+			"@component('hive::components.navbar-pills')", 
+			"    @slot('navs')", 
+			"        <ul class=\"navbar-nav mr-auto\">", 
+			"            <li class=\"mr-2\"><a class=\"nav-link\" href=\"{{ url('${1:url}') }}\">${2:button_text}</a></li>", 
+			"            <li class=\"mr-2 dropdown\">", 
+			"                <a href=\"#\" data-toggle=\"dropdown\" class=\"nav-link\">${3:dropdown_button_text}</a>", 
+			"                <div class=\"dropdown-menu\">", 
+			"                    <h6 class=\"dropdown-header\">${4:dropdown_header_text}</h6>", 
+			"                    <a class=\"dropdown-item\" href=\"{{ url('${5:dropdown_item_url}') }}\">${6:dropdown_item_button_text}</a>", 
+			"                </div>", 
+			"            </li>", 
+			"        </ul>", 
+			"    @endslot", 
+			"@endcomponent$0", 
+		],
+		"description": "Create a new toolbar applying the Hive application styles"
+	}, 
+	"Hive Modal": {
+		"prefix": "hmodal",
+		"body": [
+			"@component('hive::components.modals', ['id' => 'm-${1:modal}', 'title' => '${2:titulo}'])", 
+			"    {!! Form::open(['url' => ${3:url}, 'class' => 'hello-form']) !!}", 
+			"    <div class=\"modal-body\">", 
+			"        $0", 
+			"    </div>", 
+			"    <div class=\"modal-footer\">", 
+			"        {!! Form::submit('${4:submit_text}', ['class' => 'btn btn-primary']) !!}", 
+			"    </div>", 
+			"    {!! Form::close() !!}", 
+			"@endcomponent", 
+		],
+		"description": "Create a new modal applying the Hive application styles"
+	}, 
+}
