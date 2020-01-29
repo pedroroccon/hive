@@ -1,0 +1,67 @@
+.hello-login {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	@media only screen and (min-width : 768px) {
+		float: left;
+		width: 80%;
+	}
+}
+.hello-banner {
+	display: none;
+
+	@media only screen and (min-width : 768px) {
+		position: relative;
+		float: left;
+		width: 20%;
+		height: 100%;
+		background: #007bff url('../images/login-banner.jpg') no-repeat center center;
+	}
+}
+
+.hello-login-container {
+	position: relative;
+	padding: 20px;
+	margin: 0 auto;
+	width: 350px;
+	height: auto;
+	text-align: center;
+
+	@media only screen and (min-width : 768px) {
+		width: 480px;
+		text-align: left;
+	}
+}
+
+.hello-login-form {
+
+	.form-control {
+		padding: 10px 0;
+		border: none;
+		border-bottom: #ddd 2px solid;
+		@include border-radius(0);
+
+		&:focus {
+			border-color: #555;
+			@include box-shadow(none);
+		}
+	}
+
+}
+
+.hello-login-logo {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+}
+
+.hello-login-controls {
+	margin-top: 30px;
+}
+
+.hello-login-footer {
+	margin-top: 30px;
+}
