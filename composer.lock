@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "8e9cf55f0f64a4732485560dcb5747a7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -331,6 +331,52 @@
                 "validator"
             ],
             "time": "2020-02-13T22:36:52+00:00"
+        },
+        {
+            "name": "erusev/parsedown",
+            "version": "1.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2019-12-30T22:54:17+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -730,6 +776,72 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "5.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "44c6787311242a979fa15c704327c20e7221a0e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/44c6787311242a979fa15c704327c20e7221a0e4",
+                "reference": "44c6787311242a979fa15c704327c20e7221a0e4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
+                "json-schema/json-schema-test-suite": "1.2.0",
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonSchema\\": "src/JsonSchema/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "time": "2019-09-25T14:49:45+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1186,6 +1298,43 @@
             "time": "2019-12-20T14:22:59+00:00"
         },
         {
+            "name": "neitanod/forceutf8",
+            "version": "v2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neitanod/forceutf8.git",
+                "reference": "c1fbe70bfb5ad41b8ec5785056b0e308b40d4831"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neitanod/forceutf8/zipball/c1fbe70bfb5ad41b8ec5785056b0e308b40d4831",
+                "reference": "c1fbe70bfb5ad41b8ec5785056b0e308b40d4831",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ForceUTF8\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastián Grignoli",
+                    "email": "grignoli@gmail.com"
+                }
+            ],
+            "description": "PHP Class Encoding featuring popular Encoding::toUTF8() function --formerly known as forceUTF8()-- that fixes mixed encoded strings.",
+            "homepage": "https://github.com/neitanod/forceutf8",
+            "time": "2019-12-10T14:09:14+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.31.0",
             "source": {
@@ -1254,6 +1403,350 @@
                 "time"
             ],
             "time": "2020-03-01T11:11:58+00:00"
+        },
+        {
+            "name": "nfephp-org/sped-common",
+            "version": "v5.0.44",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nfephp-org/sped-common.git",
+                "reference": "0108a87d6b5577b76fca78d683450906ea611130"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nfephp-org/sped-common/zipball/0108a87d6b5577b76fca78d683450906ea611130",
+                "reference": "0108a87d6b5577b76fca78d683450906ea611130",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "ext-soap": "*",
+                "league/flysystem": "^1.0",
+                "neitanod/forceutf8": "^2.0",
+                "php": ">=7.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "jakub-onderka/php-console-highlighter": "^0.3.2",
+                "jakub-onderka/php-parallel-lint": "^0.9.2",
+                "phpstan/phpstan": "^0.9.2",
+                "phpunit/phpunit": "^5.7",
+                "scrutinizer/ocular": "^1.3",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-v5.0": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NFePHP\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later",
+                "GPL-3.0-or-later",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto L. Machado",
+                    "email": "linux.rlm@gmail.com.br",
+                    "homepage": "http://www.nfephp.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Comunidade NFePHP",
+                    "homepage": "https://github.com/nfephp-org/sped-common/graphs/contributors"
+                }
+            ],
+            "description": "sped-common é parte do projeto NFePHP.",
+            "homepage": "https://github.com/nfephp-org/sped-common",
+            "keywords": [
+                "nfe",
+                "nfephp",
+                "sped"
+            ],
+            "time": "2019-12-06T12:50:35+00:00"
+        },
+        {
+            "name": "nfephp-org/sped-da",
+            "version": "v0.1.27",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nfephp-org/sped-da.git",
+                "reference": "5bdcba80154aa7fb740a36da4a24b2734bcc26d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nfephp-org/sped-da/zipball/5bdcba80154aa7fb740a36da4a24b2734bcc26d8",
+                "reference": "5bdcba80154aa7fb740a36da4a24b2734bcc26d8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0",
+                "tecnickcom/tc-lib-barcode": "^1.15"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.9.2",
+                "phpunit/phpunit": "^5.7",
+                "scrutinizer/ocular": "^1.3",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "suggest": {
+                "nfephp-org/posprint": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NFePHP\\DA\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later+",
+                "GPL-3.0-or-later",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto L. Machado",
+                    "email": "linux.rlm@gmail.com.br",
+                    "homepage": "http://www.nfephp.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Comunidade NFePHP",
+                    "homepage": "https://github.com/nfephp-org/sped-da/graphs/contributors"
+                }
+            ],
+            "description": "sped-da contêm as classes para criação dos documentos auxiliares referidos no projeto Sped.",
+            "homepage": "https://github.com/nfephp-org/sped-da",
+            "keywords": [
+                "CCe",
+                "Dacte",
+                "Danfe",
+                "nfe",
+                "nfephp",
+                "sped"
+            ],
+            "time": "2019-10-10T13:40:51+00:00"
+        },
+        {
+            "name": "nfephp-org/sped-gtin",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nfephp-org/sped-gtin.git",
+                "reference": "12bdf877560641a461c9943270f9d85c45c4c4cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nfephp-org/sped-gtin/zipball/12bdf877560641a461c9943270f9d85c45c4c4cb",
+                "reference": "12bdf877560641a461c9943270f9d85c45c4c4cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "dev-master",
+                "phpunit/phpunit": "^5.7",
+                "scrutinizer/ocular": "^1.3",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^2.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "v1.0": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NFePHP\\Gtin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later",
+                "GPL-3.0-or-later",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto L. Machado",
+                    "email": "linux.rlm@gmail.com.br",
+                    "homepage": "https://github.com/nfephp-org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Comunidade NFePHP",
+                    "homepage": "https://github.com/nfephp-org/sped-gtin/graphs/contributors"
+                }
+            ],
+            "description": "Classes for validation of GTIN codes.",
+            "homepage": "https://github.com/nfephp-org/sped-gtin",
+            "keywords": [
+                "gtin",
+                "nfce",
+                "nfe",
+                "nfephp",
+                "sped"
+            ],
+            "time": "2018-09-25T19:27:11+00:00"
+        },
+        {
+            "name": "nfephp-org/sped-ibpt",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nfephp-org/sped-ibpt.git",
+                "reference": "9cb74f2a9ef37d6669bf72fdf4b59149c1692c98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nfephp-org/sped-ibpt/zipball/9cb74f2a9ef37d6669bf72fdf4b59149c1692c98",
+                "reference": "9cb74f2a9ef37d6669bf72fdf4b59149c1692c98",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.9.1",
+                "phpunit/phpunit": "^6.5",
+                "scrutinizer/ocular": "^1.3",
+                "squizlabs/php_codesniffer": "^2.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "v2.0": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NFePHP\\Ibpt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+",
+                "LGPL-3.0+",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto L. Machado",
+                    "email": "linux.rlm@gmail.com.br",
+                    "homepage": "http://www.nfephp.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Comunidade NFePHP",
+                    "homepage": "https://github.com/nfephp-org/sped-nfe/graphs/contributors"
+                }
+            ],
+            "description": "API para a comunicação com o servidor Restful do IBPT.",
+            "homepage": "https://github.com/nfephp-org/sped-ibpt",
+            "keywords": [
+                "IBPT",
+                "nfce",
+                "nfe",
+                "nfephp"
+            ],
+            "time": "2018-06-24T14:34:49+00:00"
+        },
+        {
+            "name": "nfephp-org/sped-nfe",
+            "version": "v5.0.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nfephp-org/sped-nfe.git",
+                "reference": "cf0baf005691c3a9e252314150c7dac18adbb2ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nfephp-org/sped-nfe/zipball/cf0baf005691c3a9e252314150c7dac18adbb2ee",
+                "reference": "cf0baf005691c3a9e252314150c7dac18adbb2ee",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-openssl": "*",
+                "ext-simplexml": "*",
+                "ext-soap": "*",
+                "ext-zlib": "*",
+                "justinrainbow/json-schema": "^5.2",
+                "nfephp-org/sped-common": "^5.0",
+                "nfephp-org/sped-gtin": "^1.0",
+                "php": ">= 7.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.9.2",
+                "phpunit/phpunit": "^7.5",
+                "scrutinizer/ocular": "^1.3",
+                "sebastian/phpcpd": "^4.1",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "v5.0": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NFePHP\\NFe\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later",
+                "GPL-3.0-or-later",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto L. Machado",
+                    "email": "linux.rlm@gmail.com.br",
+                    "homepage": "http://www.nfephp.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Comunidade NFePHP",
+                    "homepage": "https://github.com/nfephp-org/sped-nfe/graphs/contributors"
+                }
+            ],
+            "description": "API para geração e comunicação da NFe e NFCe com as SEFAZ autorizadoras.",
+            "homepage": "https://github.com/nfephp-org/sped-nfe",
+            "keywords": [
+                "nfce",
+                "nfe",
+                "nfephp",
+                "sped"
+            ],
+            "time": "2020-03-12T12:18:08+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1412,6 +1905,627 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-ajuda",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-ajuda.git",
+                "reference": "5601a8e6d04c4f2452b1d2bc6f1987b078c24a08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-ajuda/zipball/5601a8e6d04c4f2452b1d2bc6f1987b078c24a08",
+                "reference": "5601a8e6d04c4f2452b1d2bc6f1987b078c24a08",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "^1.7"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Ajuda\\AjudaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Ajuda\\": "src/Ajuda/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote de ajuda, contendo tutoriais e dicar para integração com os módulos do sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-ajuda/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-ajuda/issues"
+            },
+            "time": "2020-01-07T16:50:42+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-caixa",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-caixa.git",
+                "reference": "a6d9b5353fe1710c18aa71d9e9d0e5ac259ed665"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-caixa/zipball/a6d9b5353fe1710c18aa71d9e9d0e5ac259ed665",
+                "reference": "a6d9b5353fe1710c18aa71d9e9d0e5ac259ed665",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Caixa\\CaixaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Caixa\\": "src/Caixa/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote para integração do controle de caixa e financeiro com o sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-caixa/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-caixa/issues"
+            },
+            "time": "2020-01-30T17:02:58+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-contabil",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-contabil.git",
+                "reference": "0a08f7c27f5596831a203ffaa0a627fdfec420be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-contabil/zipball/0a08f7c27f5596831a203ffaa0a627fdfec420be",
+                "reference": "0a08f7c27f5596831a203ffaa0a627fdfec420be",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Contabil\\ContabilServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Contabil\\": "src/Contabil/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote para integração dos módulos contábeis com o sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-contabil/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-contabil/issues"
+            },
+            "time": "2020-01-30T15:53:37+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-core",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-core.git",
+                "reference": "437fd2d73f4ca8b2c3df736fd4b4b7ba2f153c4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-core/zipball/437fd2d73f4ca8b2c3df736fd4b4b7ba2f153c4e",
+                "reference": "437fd2d73f4ca8b2c3df736fd4b4b7ba2f153c4e",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Hello\\HelloServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Hello\\": "src/Hello/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Pedroroccon\\Hello\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                },
+                {
+                    "name": "Valdir Roccon",
+                    "email": "valdir@byus.com.br"
+                },
+                {
+                    "name": "Luiz Eduardo R. dos Santos",
+                    "email": "luiz@byus.com.br"
+                }
+            ],
+            "description": "Pacote com os arquivos essenciais para o sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-core/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-core/issues"
+            },
+            "time": "2020-01-30T18:54:08+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-entidade",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-entidade.git",
+                "reference": "6533a5d8f605c4003be6c1d97b68afe1f3d4a0a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-entidade/zipball/6533a5d8f605c4003be6c1d97b68afe1f3d4a0a9",
+                "reference": "6533a5d8f605c4003be6c1d97b68afe1f3d4a0a9",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Entidade\\EntidadeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Entidade\\": "src/Entidade/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Integração de entidades com o pacote Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-entidade/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-entidade/issues"
+            },
+            "time": "2020-01-30T17:03:10+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-imposto",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-imposto.git",
+                "reference": "b476e7781494ffab58da94da8a537486cd23263b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-imposto/zipball/b476e7781494ffab58da94da8a537486cd23263b",
+                "reference": "b476e7781494ffab58da94da8a537486cd23263b",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Imposto\\ImpostoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pedroroccon\\Imposto\\": "src/Imposto/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote responsável pelo cálculo dos impostos (padrões brasileiros).",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-imposto/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-imposto/issues"
+            },
+            "time": "2020-01-07T16:53:35+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-localidade",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-localidade.git",
+                "reference": "cbf10d2a1980151bd5dda711a32f2aa71d2a2455"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-localidade/zipball/cbf10d2a1980151bd5dda711a32f2aa71d2a2455",
+                "reference": "cbf10d2a1980151bd5dda711a32f2aa71d2a2455",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Localidade\\LocalidadeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Localidade\\": "src/Localidade/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote responsável pelo controle de todas as localizações (cidade, estados e países). Módulo integrado com o sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-localidade/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-localidade/issues"
+            },
+            "time": "2020-01-30T12:50:15+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-nfe",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-nfe.git",
+                "reference": "61210e35afd16942456c27e1938ca00f1e253e80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-nfe/zipball/61210e35afd16942456c27e1938ca00f1e253e80",
+                "reference": "61210e35afd16942456c27e1938ca00f1e253e80",
+                "shasum": ""
+            },
+            "require": {
+                "nfephp-org/sped-da": "^0.1.23",
+                "nfephp-org/sped-ibpt": "^2.0",
+                "nfephp-org/sped-nfe": "^5.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Nfe\\NfeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Nfe\\": "src/Nfe/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote para integração de notas fiscais com o sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-nfe/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-nfe/issues"
+            },
+            "time": "2020-01-30T17:03:18+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-operacao",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-operacao.git",
+                "reference": "30df1bf3adf79a24df5b204514bfdde6da7dc618"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-operacao/zipball/30df1bf3adf79a24df5b204514bfdde6da7dc618",
+                "reference": "30df1bf3adf79a24df5b204514bfdde6da7dc618",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Operacao\\OperacaoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Operacao\\": "src/Operacao/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@byus.com.br"
+                },
+                {
+                    "name": "Valdir Roccon",
+                    "email": "valdir@byus.com.br"
+                },
+                {
+                    "name": "Luiz Eduardo R. Dos Santos",
+                    "email": "luiz@byus.com.br"
+                }
+            ],
+            "description": "Pacote responsável pelas operações fiscais (de compra e venda) dentro do sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-operacao/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-operacao/issues"
+            },
+            "time": "2020-01-30T17:03:23+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-ordem-servico",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-ordem-servico.git",
+                "reference": "6daff0f0a3ceec3997696debafa346e931182ab3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-ordem-servico/zipball/6daff0f0a3ceec3997696debafa346e931182ab3",
+                "reference": "6daff0f0a3ceec3997696debafa346e931182ab3",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\OrdemServico\\OrdemServicoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\OrdemServico\\": "src/OrdemServico/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote para integração de ordens de serviço no sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-ordem-servico/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-ordem-servico/issues"
+            },
+            "time": "2019-09-26T14:44:45+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-pedido",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-pedido.git",
+                "reference": "26e586ce99e03dd50422508def22788ce61bb547"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-pedido/zipball/26e586ce99e03dd50422508def22788ce61bb547",
+                "reference": "26e586ce99e03dd50422508def22788ce61bb547",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Pedido\\PedidoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Pedido\\": "src/Pedido/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote para integração de pedidos de compra e venda, bem como orçamentos. Módulos do sistema Hive",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-pedido/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-pedido/issues"
+            },
+            "time": "2020-01-30T17:03:29+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-produto",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-produto.git",
+                "reference": "82947fbbdfe3452d4013f076cb9bd5124dc3f763"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-produto/zipball/82947fbbdfe3452d4013f076cb9bd5124dc3f763",
+                "reference": "82947fbbdfe3452d4013f076cb9bd5124dc3f763",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\Produto\\ProdutoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/database/migrations"
+                ],
+                "psr-4": {
+                    "Pedroroccon\\Produto\\": "src/Produto/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote para adição da gestão de produtos no sistema Hive.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-produto/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-produto/issues"
+            },
+            "time": "2020-01-30T17:03:34+00:00"
+        },
+        {
+            "name": "pedroroccon/hive-representante",
+            "version": "dev-latest",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pedroroccon/hive-representante.git",
+                "reference": "adbebb7fa5a3b9f48d611c54435914bb7041b105"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pedroroccon/hive-representante/zipball/adbebb7fa5a3b9f48d611c54435914bb7041b105",
+                "reference": "adbebb7fa5a3b9f48d611c54435914bb7041b105",
+                "shasum": ""
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pedroroccon\\RepresentanteApp\\RepresentanteAppServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pedroroccon\\RepresentanteApp\\": "src/RepresentanteApp/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Roccon",
+                    "email": "pedro@pedroroccon.com.br"
+                }
+            ],
+            "description": "Pacote para adição de toda a mecânica para representantes adicionarem seus respectivos pedidos no sistema.",
+            "support": {
+                "source": "https://github.com/pedroroccon/hive-representante/tree/latest",
+                "issues": "https://github.com/pedroroccon/hive-representante/issues"
+            },
+            "time": "2020-01-07T16:54:05+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3287,6 +4401,155 @@
                 "dump"
             ],
             "time": "2020-02-26T22:30:10+00:00"
+        },
+        {
+            "name": "tecnickcom/tc-lib-barcode",
+            "version": "1.15.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tecnickcom/tc-lib-barcode.git",
+                "reference": "34b0224f71ebfe83adcef9f14f3d81965fb55493"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tecnickcom/tc-lib-barcode/zipball/34b0224f71ebfe83adcef9f14f3d81965fb55493",
+                "reference": "34b0224f71ebfe83adcef9f14f3d81965fb55493",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "tecnickcom/tc-lib-color": "^1.12.1"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.1.2",
+                "bartlett/php-compatinfo": "^5.0.0",
+                "pdepend/pdepend": "^2.2.2",
+                "phploc/phploc": "^2.1.5|^3.0.0",
+                "phpmd/phpmd": "^2.3.2",
+                "phpunit/phpunit": "4.8.19|^5.0.0",
+                "sebastian/phpcpd": "^2.0.2",
+                "squizlabs/php_codesniffer": "^2.5.0|^3.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Com\\Tecnick\\Barcode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP library to generate linear and bidimensional barcodes",
+            "homepage": "http://www.tecnick.com",
+            "keywords": [
+                "3 of 9",
+                "ANSI MH10.8M-1983",
+                "CBC",
+                "CODABAR",
+                "CODE 11",
+                "CODE 128 A B C",
+                "CODE 39",
+                "CODE 93",
+                "EAN 13",
+                "EAN 8",
+                "ECC200",
+                "Intelligent Mail Barcode",
+                "Interleaved 2 of 5",
+                "KIX",
+                "Klant",
+                "MSI",
+                "Onecode",
+                "PHARMACODE",
+                "PHARMACODE TWO-TRACKS",
+                "POSTNET",
+                "RMS4CC",
+                "Standard 2 of 5",
+                "UPC-A",
+                "UPC-E",
+                "USD-3",
+                "USPS-B-3200",
+                "USS-93",
+                "barcode",
+                "datamatrix",
+                "pdf417",
+                "planet",
+                "qr-code",
+                "royal mail",
+                "tc-lib-barcode",
+                "upc"
+            ],
+            "time": "2016-11-17T18:13:54+00:00"
+        },
+        {
+            "name": "tecnickcom/tc-lib-color",
+            "version": "1.12.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tecnickcom/tc-lib-color.git",
+                "reference": "2f4860cbac4d58c210b6bec4c5806906278962c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tecnickcom/tc-lib-color/zipball/2f4860cbac4d58c210b6bec4c5806906278962c1",
+                "reference": "2f4860cbac4d58c210b6bec4c5806906278962c1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "apigen/apigen": "^2.8.1 || ^4.1.2",
+                "bartlett/php-compatinfo": "^4.5.2 || ^5.0.10 || ^5.0.12",
+                "pdepend/pdepend": "^2.5.2",
+                "phploc/phploc": "^2.1 || ^3.0 || ^4.0",
+                "phpmd/phpmd": "^2.6.0",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.1",
+                "sebastian/phpcpd": "^2.0 || ^3.0 || ^4.0",
+                "squizlabs/php_codesniffer": "^2.8.0 || ^3.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Com\\Tecnick\\Color\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP library to manipulate various color representations",
+            "homepage": "http://www.tecnick.com",
+            "keywords": [
+                "cmyk",
+                "color",
+                "colors",
+                "colour",
+                "colours",
+                "hsl",
+                "hsla",
+                "javascript",
+                "rgb",
+                "rgba",
+                "tc-lib-color",
+                "web"
+            ],
+            "time": "2020-01-02T16:01:17+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -5443,7 +6706,21 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "pedroroccon/hive-ajuda": 20,
+        "pedroroccon/hive-caixa": 20,
+        "pedroroccon/hive-core": 20,
+        "pedroroccon/hive-entidade": 20,
+        "pedroroccon/hive-imposto": 20,
+        "pedroroccon/hive-localidade": 20,
+        "pedroroccon/hive-nfe": 20,
+        "pedroroccon/hive-operacao": 20,
+        "pedroroccon/hive-ordem-servico": 20,
+        "pedroroccon/hive-pedido": 20,
+        "pedroroccon/hive-produto": 20,
+        "pedroroccon/hive-representante": 20,
+        "pedroroccon/hive-contabil": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
