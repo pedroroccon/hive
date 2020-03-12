@@ -70,9 +70,11 @@
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0", 
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.0",
         "pedroroccon/hive-ajuda": "dev-latest",
         "pedroroccon/hive-caixa": "dev-latest",
+        "pedroroccon/hive-contabil": "dev-latest",
         "pedroroccon/hive-core": "dev-latest",
         "pedroroccon/hive-entidade": "dev-latest",
         "pedroroccon/hive-imposto": "dev-latest",
@@ -82,8 +84,7 @@
         "pedroroccon/hive-ordem-servico": "dev-latest",
         "pedroroccon/hive-pedido": "dev-latest",
         "pedroroccon/hive-produto": "dev-latest",
-        "pedroroccon/hive-representante": "dev-latest",
-        "pedroroccon/hive-contabil": "dev-latest"
+        "pedroroccon/hive-representante": "dev-latest"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
