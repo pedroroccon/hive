@@ -12,4 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css')
+   .js('resources/hive/js/app.js', 'public/h-assets/js')
+   .sass('resources/hive/sass/app.scss', 'public/h-assets/css')
+   .options({
+      processCssUrls: false
+   });
