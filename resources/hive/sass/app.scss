@@ -24,6 +24,11 @@ html, body { height: 100%; }
 body {
 	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 	font-weight: 500;
+
+	&::-webkit-scrollbar { width: 5px; height: 5px; }
+	&::-webkit-scrollbar-track { background: none; }
+	&::-webkit-scrollbar-thumb { background: #aaa; }
+	&::-webkit-scrollbar-thumb:hover { background: #999; }
 }
 
 .container-fluid {
@@ -136,3 +141,6 @@ body {
 	border-radius: $global-border-radius;
 	box-shadow: rgba(0, 0, 0, .125) 0 1px 5px;
 }
+
+// jQuery UI autocomplete
+.ui-menu { z-index: 9999; }

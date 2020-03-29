@@ -23,3 +23,13 @@
 		font-size: .75em;
 	}
 }
+
+.app-form-footer-sticky {
+	position: sticky;
+	position: -webkit-sticky; /* Webkit fixes */
+	bottom: 0;
+
+	.card-body {
+		background: #fff;
+	}
+}

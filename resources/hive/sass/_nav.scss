@@ -72,6 +72,11 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 
+	&::-webkit-scrollbar { width: 5px; height: 5px; }
+	&::-webkit-scrollbar-track { background: none; }
+	&::-webkit-scrollbar-thumb { background: #ddd; }
+	&::-webkit-scrollbar-thumb:hover { background: #999; }
+
 	@media only screen and (min-width : 992px) {
 		position: fixed;
 		float: left;

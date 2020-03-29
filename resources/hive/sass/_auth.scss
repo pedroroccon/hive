@@ -1,67 +1,56 @@
-.hello-login {
-	display: flex;
-	align-items: center;
-	position: relative;
+.hive-login {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 
-	@media only screen and (min-width : 768px) {
-		float: left;
-		width: 80%;
-	}
-}
-.hello-banner {
-	display: none;
-
-	@media only screen and (min-width : 768px) {
-		position: relative;
-		float: left;
-		width: 20%;
+	.login {
+		position: absolute;
+		padding: 50px 100px;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		width: 35%;
 		height: 100%;
-		background: #007bff url('../images/login-banner.jpg') no-repeat center center;
-	}
-}
 
-.hello-login-container {
-	position: relative;
-	padding: 20px;
-	margin: 0 auto;
-	width: 350px;
-	height: auto;
-	text-align: center;
+		.login-container {
+			position: relative;
+			width: 100%;
+			height: auto;
 
-	@media only screen and (min-width : 768px) {
-		width: 480px;
-		text-align: left;
-	}
-}
+			label {
+				display: block;
+				color: #585858;
+				text-transform: lowercase;
+				margin-bottom: -2px;
+			}
 
-.hello-login-form {
+			.form-control {
+				border: none;
+				margin-bottom: 10px;
+				padding: 10px 0;
+				border-bottom: #aaa 1px solid;
+				font-size: .8rem;
+				border-radius: 0;
 
-	.form-control {
-		padding: 10px 0;
-		border: none;
-		border-bottom: #ddd 2px solid;
-		border-radius: 0;
+				&::placeholder { color: #aaa; }
 
-		&:focus {
-			border-color: #555;
-			box-shadow: none;
+				&:hover, &:focus, &:active { outline: 0; box-shadow: none; }
+			}
 		}
 	}
 
-}
+	.hero {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 65%;
+		height: 100%;
+		background: $primary;
+	}
 
-.hello-login-logo {
-	position: absolute;
-	top: 80px;
-	left: 80px;
-}
-
-.hello-login-controls {
-	margin-top: 30px;
-}
-
-.hello-login-footer {
-	margin-top: 30px;
 }
