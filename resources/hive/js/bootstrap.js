@@ -20,7 +20,7 @@ try {
  */
 
 window.axios = require('axios');
-
+window.axios.defaults.baseURL = document.head.querySelector('meta[name="api-endpoint"]').content;
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**

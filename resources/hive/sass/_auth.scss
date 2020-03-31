@@ -6,16 +6,32 @@
 	height: 100%;
 	overflow: hidden;
 
+	.logo {
+		margin-bottom: 60px;
+	}
+
 	.login {
-		position: absolute;
-		padding: 50px 100px;
-		display: flex;
-		align-items: center;
-		box-sizing: border-box;
-		top: 0;
-		left: 0;
-		width: 35%;
-		height: 100%;
+
+		@media only screen and (min-width : map-get($grid-breakpoints, "md")) {
+			position: absolute;
+			
+			display: flex;
+			align-items: center;
+			box-sizing: border-box;
+            margin-top: 0;
+			top: 0;
+			left: 0;
+			width: 50%;
+			height: 100%;
+		}
+
+		@media only screen and (min-width : map-get($grid-breakpoints, "xl")) {
+			padding: 50px 100px;
+			width: 40%;
+		}
+		
+		padding: 40px;
+		
 
 		.login-container {
 			position: relative;
@@ -45,12 +61,31 @@
 	}
 
 	.hero {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 65%;
-		height: 100%;
+		@media only screen and (min-width : map-get($grid-breakpoints, "md")) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 50%;
+		}
+		
+		@media only screen and (min-width : map-get($grid-breakpoints, "xl")) {
+			width: 60%;
+		}
+		
 		background: $primary;
 	}
 
+	.btn-submit {
+		max-width: 160px;
+	}
+
+	.actions {
+		margin-top: 50px;
+
+		.list-unstyled {
+			font-size: .75rem;
+		}
+
+	}
 }
